@@ -1,0 +1,12 @@
+<script type="text/javascript" src="/eel.js"></script>
+
+<input id="name">
+<button id="save">Save</button>
+<script>
+window.addEventListener('DOMContentLoaded', async(event) => {
+    document.querySelector('#save').addEventListener('click', async(event) => {
+        eel.save(document.querySelector('#name').value)
+    })
+})
+</script>
+
